@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://kahedu.edu.in/n/wp-content/uploads/2021/10/DSC_0074-1-min-new.jpg') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(8px); 
+      z-index: -1;
+    }
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 123, 255, 0.675);
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+    .back-button:hover {
+      background-color: rgba(0, 86, 179, 0.9);
+    }
+    .signup-container {
+      background: rgba(252, 252, 252, 0.297);
+      padding: 40px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      margin: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+    .signup-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .signup-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .signup-container button:hover {
+      background-color: #0056b3;
+    }
+    .signup-container .login-link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .signup-container .login-link a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .signup-container .login-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 400px) {
+      .signup-container {
+        width: 90%;
+      }
+      .back-button {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="./home.html" class="back-button">&larr; Back</a>
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Full Name" required />
+      <label>Enter Email</label>
+      <input type="email" placeholder="Email Address" required />
+      <label>Password</label>
+      <input type="password" placeholder="Password" required />
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+      Already have an account? <a href="./Login.html">Login here</a>
+    </div>
+  </div>
+</body>
+</html>

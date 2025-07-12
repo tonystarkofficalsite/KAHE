@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://kahedu.edu.in/n/wp-content/uploads/2021/10/DSC_0074-1-min-new.jpg') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(8px); 
+      z-index: -1;
+    }
+    .homepage-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    .content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .btn-login {
+      background-color: #007BFF;
+    }
+    .btn-login:hover {
+      background-color: #0056b3;
+    }
+    .btn-signup {
+      background-color: #28a745;
+    }
+    .btn-signup:hover {
+      background-color: #1e7e34;
+    }
+    @media (max-width: 500px) {
+      .btn-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="homepage-container">
+    <div class="content">
+      <h1>Welcome to My Platform</h1>
+      <p>Please login or sign up to continue</p>
+      <div class="btn-group">
+        <a href="./Login.html" class="btn btn-login">Login</a>
+        <a href="./Signin.html" class="btn btn-signup">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
